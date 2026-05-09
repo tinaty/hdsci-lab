@@ -46,7 +46,7 @@
     }
 
     h2 {
-      margin-top: 50px;
+      margin-top: 60px;
       margin-bottom: 25px;
       color: #0b3d91;
       border-bottom: 2px solid #dce3f0;
@@ -103,26 +103,11 @@
       text-decoration: none;
       border-radius: 6px;
       font-size: 0.9rem;
+      transition: background-color 0.2s ease;
     }
 
     .profile-link:hover {
       background-color: #072d6b;
-    }
-
-    /* Visitor list */
-    .visitor-list {
-      background: white;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    }
-
-    .visitor-list ul {
-      padding-left: 20px;
-    }
-
-    .visitor-list li {
-      margin-bottom: 12px;
     }
 
     footer {
@@ -130,6 +115,13 @@
       padding: 40px 20px;
       color: #666;
       font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: inline-block;
+        margin: 8px;
+      }
     }
   </style>
 </head>
@@ -149,7 +141,7 @@
 
     <h1>People</h1>
 
-    <!-- PI Section -->
+    <!-- Principal Investigator -->
     <h2>Principal Investigator</h2>
 
     <div class="people-grid">
@@ -180,59 +172,157 @@
 
       <div class="person-card">
         <img src="images/jack-johnson.jpg" alt="Jack Johnson">
+
         <h3>Jack Johnson</h3>
-        <p class="role">DPhil Student</p>
-        <a class="profile-link" href="#">Profile</a>
+
+        <p class="role">
+          DPhil Student
+        </p>
+
+        <a class="profile-link"
+           href="#"
+           target="_blank">
+          Profile
+        </a>
       </div>
 
       <div class="person-card">
         <img src="images/suzanne-maynard.jpg" alt="Suzanne Maynard">
+
         <h3>Suzanne Maynard</h3>
-        <p class="role">DPhil Student</p>
-        <a class="profile-link" href="#">Profile</a>
+
+        <p class="role">
+          DPhil Student
+        </p>
+
+        <a class="profile-link"
+           href="#"
+           target="_blank">
+          Profile
+        </a>
       </div>
 
       <div class="person-card">
         <img src="images/yun-jung-kim.jpg" alt="Yun Jung Kim">
+
         <h3>Yun Jung Kim</h3>
-        <p class="role">Predoctoral Fellow</p>
-        <a class="profile-link" href="#">Profile</a>
+
+        <p class="role">
+          Predoctoral Fellow
+        </p>
+
+        <a class="profile-link"
+           href="#"
+           target="_blank">
+          Profile
+        </a>
       </div>
 
       <div class="person-card">
         <img src="images/meghali-banerjee.jpg" alt="Meghali Banerjee">
+
         <h3>Meghali Banerjee</h3>
-        <p class="role">Postdoctoral Scientist</p>
-        <a class="profile-link" href="#">Profile</a>
+
+        <p class="role">
+          Postdoctoral Scientist
+        </p>
+
+        <a class="profile-link"
+           href="#"
+           target="_blank">
+          Profile
+        </a>
       </div>
 
     </div>
 
-    <!-- Visitors -->
+    <!-- Academic Visitors -->
     <h2>Academic Visitors</h2>
 
-    <div class="visitor-list">
-      <ul>
-        <li>
-          Visiting PhD Student: Kaicheng Zhao, University of Osaka
-        </li>
+    <div class="people-grid">
 
-        <li>
-          Visiting MSc Student: Chris Cole, University of Oxford
-        </li>
+      <div class="person-card">
+        <img src="images/kaicheng-zhao.jpg" alt="Kaicheng Zhao">
 
-        <li>
-          <a href="https://hic.nihr.ac.uk/viral-hepatitis"
-             target="_blank"
-             rel="noopener noreferrer">
-            NIHR Health Informatics Collaborative
-          </a>
-        </li>
-      </ul>
+        <h3>Kaicheng Zhao</h3>
+
+        <p class="role">
+          Visiting PhD Student<br>
+          University of Osaka
+        </p>
+
+        <a class="profile-link"
+           href="#"
+           target="_blank">
+          Profile
+        </a>
+      </div>
+
+      <div class="person-card">
+        <img src="images/chris-cole.jpg" alt="Chris Cole">
+
+        <h3>Chris Cole</h3>
+
+        <p class="role">
+          Visiting MSc Student<br>
+          University of Oxford
+        </p>
+
+        <a class="profile-link"
+           href="#"
+           target="_blank">
+          Profile
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Collaborators -->
+    <h2>Collaborators</h2>
+
+    <div class="people-grid">
+
+      <div class="person-card">
+        <img src="images/azim-ansari.jpg" alt="Azim Ansari">
+
+        <h3>Prof Azim Ansari</h3>
+
+        <p class="role">
+          Collaborator<br>
+          University of Florida
+        </p>
+
+        <a class="profile-link"
+           href="#"
+           target="_blank">
+          Profile
+        </a>
+      </div>
+
+      <div class="person-card">
+        <img src="images/nihr-hic.jpg"
+             alt="NIHR Health Informatics Collaborative">
+
+        <h3>NIHR Health Informatics Collaborative</h3>
+
+        <p class="role">
+          Research Collaboration<br>
+          Viral Hepatitis & Liver Disease
+        </p>
+
+        <a class="profile-link"
+           href="https://hic.nihr.ac.uk/viral-hepatitis"
+           target="_blank"
+           rel="noopener noreferrer">
+          Visit Website
+        </a>
+      </div>
+
     </div>
 
   </div>
 
+  <!-- Footer -->
   <footer>
     <p>
       <em>Interested in joining the lab?</em>

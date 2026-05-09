@@ -14,6 +14,7 @@
       line-height: 1.7;
     }
 
+    /* Navigation */
     nav {
       background-color: #0b3d91;
       padding: 15px 30px;
@@ -31,12 +32,14 @@
       text-decoration: underline;
     }
 
+    /* Main profile wrapper */
     .profile-container {
       max-width: 1000px;
       margin: auto;
       padding: 50px 20px;
     }
 
+    /* Profile card */
     .profile-header {
       background: white;
       border-radius: 18px;
@@ -73,6 +76,7 @@
       margin-bottom: 15px;
     }
 
+    /* Buttons */
     .links {
       margin-top: 20px;
     }
@@ -94,6 +98,7 @@
       background-color: #072d6b;
     }
 
+    /* Sections */
     .section {
       background: white;
       border-radius: 16px;
@@ -125,7 +130,9 @@
       font-size: 0.95rem;
     }
 
+    /* Responsive */
     @media (max-width: 768px) {
+
       .profile-header {
         grid-template-columns: 1fr;
         text-align: center;
@@ -146,6 +153,7 @@
 
 <body>
 
+  <!-- Navigation -->
   <nav>
     <a href="../index.html">Home</a>
     <a href="../people.html">People</a>
@@ -156,6 +164,7 @@
 
   <div class="profile-container">
 
+    <!-- Profile Header -->
     <div class="profile-header">
 
       <img src="../images/tina-wang.jpg" alt="Dr Tina Wang">
@@ -175,6 +184,7 @@
         </p>
 
         <div class="links">
+
           <a href="#"
              target="_blank"
              rel="noopener noreferrer">
@@ -192,13 +202,16 @@
              rel="noopener noreferrer">
             LinkedIn
           </a>
+
         </div>
 
       </div>
 
     </div>
 
+    <!-- About -->
     <div class="section">
+
       <h2>About</h2>
 
       <p>
@@ -216,9 +229,12 @@
         disease prediction, risk stratification,
         and precision medicine.
       </p>
+
     </div>
 
+    <!-- Research Interests -->
     <div class="section">
+
       <h2>Research Interests</h2>
 
       <ul>
@@ -229,31 +245,12 @@
         <li>Predictive modeling and risk stratification</li>
         <li>Translational data science</li>
       </ul>
-    </div>
 
-    <div class="section">
-      <h2>Selected Publications</h2>
-
-      <ul>
-        <li>
-          Wang T, et al. Example publication title.
-          <em>Nature Medicine</em>, 2025.
-        </li>
-
-        <li>
-          Wang T, et al. Example publication title.
-          <em>The Lancet Digital Health</em>, 2024.
-        </li>
-
-        <li>
-          Wang T, et al. Example publication title.
-          <em>JAMA Network Open</em>, 2023.
-        </li>
-      </ul>
     </div>
 
   </div>
 
+  <!-- Footer -->
   <footer>
     © 2026 HDSci Lab · University of Oxford
   </footer>

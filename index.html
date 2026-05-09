@@ -1,94 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HDSci Lab</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-
 
   <style>
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      max-width: 900px;
-      margin: 40px auto;
-      line-height: 1.6;
-      padding: 0 20px;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f7fa;
       color: #222;
+      line-height: 1.7;
     }
+
+    /* Navigation */
     nav {
-      margin-bottom: 30px;
+      background-color: #0b3d91;
+      padding: 15px 30px;
+      text-align: center;
     }
+
     nav a {
-      margin-right: 15px;
+      color: white;
       text-decoration: none;
-      color: #0056b3;
+      margin: 0 15px;
+      font-weight: bold;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
-    h1, h2 {
-      color: #111;
+
+    /* Main container */
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 50px 20px;
     }
+
+    /* Hero section */
+    .hero {
+      background: white;
+      border-radius: 18px;
+      padding: 50px 40px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      margin-bottom: 35px;
+    }
+
+    .hero h1 {
+      margin-top: 0;
+      margin-bottom: 15px;
+      color: #0b3d91;
+      font-size: 2.8rem;
+    }
+
+    .hero p {
+      max-width: 750px;
+      margin: auto;
+      font-size: 1.08rem;
+    }
+
+    .hero-subtitle {
+      margin-bottom: 25px;
+      color: #555;
+      font-size: 1.15rem;
+    }
+
+    /* Content sections */
+    .section {
+      background: white;
+      border-radius: 16px;
+      padding: 30px 35px;
+      margin-top: 25px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .section h2 {
+      margin-top: 0;
+      color: #0b3d91;
+      border-bottom: 2px solid #dce3f0;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      padding-left: 22px;
+      margin: 0;
+    }
+
+    li {
+      margin-bottom: 12px;
+    }
+
     footer {
-      margin-top: 60px;
-      padding-top: 20px;
-      border-top: 1px solid #ddd;
-      font-size: 0.9em;
+      text-align: center;
+      padding: 40px 20px;
       color: #666;
+      font-size: 0.95rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+
+      nav a {
+        display: inline-block;
+        margin: 8px;
+      }
+
+      .container {
+        padding: 30px 16px;
+      }
+
+      .hero {
+        padding: 35px 25px;
+      }
+
+      .hero h1 {
+        font-size: 2.1rem;
+      }
+
+      .section {
+        padding: 24px 22px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="people.html">People</a>
-  <a href="research.html">Research</a>
-  <a href="publications.html">Publications</a>
-  <a href="join.html">Join</a>
-</nav>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="people.html">People</a>
+    <a href="research.html">Research</a>
+    <a href="publications.html">Publications</a>
+    <a href="join.html">Join</a>
+  </nav>
 
-<h1>HDSci Lab</h1>
+  <div class="container">
 
-<p>
-<strong>Health Data Science &amp; Intelligence Laboratory</strong><br>
-Led by <strong>Dr. Tina Wang</strong>
-</p>
+    <!-- Hero Section -->
+    <div class="hero">
 
-<p>
-The HDSci Lab conducts research in health data science and intelligence
-at the intersection of healthcare, data, and patients.
-</p>
+      <h1>HDSci Lab</h1>
 
-<h2>Research Focus</h2>
-<ul>
-  <li>Health data science for clinical and healthcare decision-making</li>
-  <li>Real-world evidence and patient-centred analytics</li>
-  <li>Statistical and machine learning methods for health data</li>
-  <li>AI-based methods for improved health literacy</li>
-</ul>
+      <p class="hero-subtitle">
+        Health Data Science & Intelligence Laboratory
+      </p>
 
-<h2>Approach</h2>
-<p>
-We develop and apply rigorous statistical, data science, and artificial
-intelligence methods to address real-world healthcare problems, with a
-strong emphasis on patient impact and translational relevance.
-</p>
+      <p>
+        Led by <strong>Dr Tina Wang</strong>, the HDSci Lab conducts
+        research at the intersection of healthcare, data science,
+        artificial intelligence, and patient-centred analytics.
+      </p>
 
-<h2>Affiliation</h2>
-<p>
-The HDSci Lab is an academic research group led by Dr. Tina Wang.  
-</p>
+    </div>
 
-<footer>
-  <p>
-    © HDSci Lab<br>
-    Health Data Science &amp; Intelligence Laboratory
-  </p>
-</footer>
+    <!-- Research Focus -->
+    <div class="section">
+
+      <h2>Research Focus</h2>
+
+      <ul>
+        <li>Health data science for clinical and healthcare decision-making</li>
+        <li>Real-world evidence and patient-centred analytics</li>
+        <li>Statistical and machine learning methods for health data</li>
+        <li>AI-based methods for improved health literacy</li>
+      </ul>
+
+    </div>
+
+    <!-- Approach -->
+    <div class="section">
+
+      <h2>Approach</h2>
+
+      <p>
+        We develop and apply rigorous statistical, data science,
+        and artificial intelligence methods to address real-world
+        healthcare challenges, with a strong emphasis on patient
+        impact, translational relevance, and responsible innovation.
+      </p>
+
+    </div>
+
+    <!-- Affiliation -->
+    <div class="section">
+
+      <h2>Affiliation</h2>
+
+      <p>
+        The HDSci Lab is an academic research group led by
+        Dr Tina Wang.
+      </p>
+
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 HDSci Lab · University of Oxford
+  </footer>
 
 </body>
 </html>
-

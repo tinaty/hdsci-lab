@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr Tina Wang | HDSci Lab</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f7fa;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #0b3d91;
+      padding: 15px 30px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main profile wrapper */
+    .profile-container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    /* Profile card */
+    .profile-header {
+      background: white;
+      border-radius: 18px;
+      padding: 40px;
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 40px;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .profile-header img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #e5eaf3;
+    }
+
+    .profile-info h1 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: #0b3d91;
+      font-size: 2.2rem;
+    }
+
+    .profile-info p {
+      margin: 6px 0;
+    }
+
+    .position {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    /* Buttons */
+    .links {
+      margin-top: 20px;
+    }
+
+    .links a {
+      display: inline-block;
+      margin-right: 12px;
+      margin-bottom: 10px;
+      padding: 10px 16px;
+      background-color: #0b3d91;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      transition: background-color 0.2s ease;
+    }
+
+    .links a:hover {
+      background-color: #072d6b;
+    }
+
+    /* Sections */
+    .section {
+      background: white;
+      border-radius: 16px;
+      padding: 30px 35px;
+      margin-top: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .section h2 {
+      margin-top: 0;
+      color: #0b3d91;
+      border-bottom: 2px solid #dce3f0;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 12px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+
+      .profile-header {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .profile-header img {
+        margin: auto;
+      }
+
+      .links a {
+        display: block;
+        margin: 10px auto;
+        max-width: 220px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="../people.html">People</a>
+    <a href="../research.html">Research</a>
+    <a href="../publications.html">Publications</a>
+    <a href="../join.html">Join</a>
+  </nav>
+
+  <div class="profile-container">
+
+    <!-- Profile Header -->
+    <div class="profile-header">
+
+      <img src="../images/tina-wang.jpg" alt="Dr Tina Wang">
+
+      <div class="profile-info">
+
+        <h1>Dr Tina Wang</h1>
+
+        <p class="position">
+          Principal Investigator<br>
+          Health Data Science & Intelligence Laboratory
+        </p>
+
+        <p>
+          Department of Biomedical Informatics<br>
+          University of Oxford
+        </p>
+
+        <div class="links">
+          <a href="mailto:tina.wang@example.com">
+            Email
+          </a>
+
+          <a href="#"
+             target="_blank"
+             rel="noopener noreferrer">
+            Google Scholar
+          </a>
+
+          <a href="#"
+             target="_blank"
+             rel="noopener noreferrer">
+            ORCID
+          </a>
+
+          <a href="#"
+             target="_blank"
+             rel="noopener noreferrer">
+            LinkedIn
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- About -->
+    <div class="section">
+
+      <h2>About</h2>
+
+      <p>
+        Dr Tina Wang is the Principal Investigator of the
+        Health Data Science & Intelligence Laboratory (HDSci Lab).
+        Her research focuses on health data science,
+        clinical artificial intelligence, translational informatics,
+        and machine learning methods for liver disease and
+        population health research.
+      </p>
+
+      <p>
+        The HDSci Lab develops computational methods and
+        large-scale health data approaches to improve
+        disease prediction, risk stratification,
+        and precision medicine.
+      </p>
+
+    </div>
+
+    <!-- Research Interests -->
+    <div class="section">
+
+      <h2>Research Interests</h2>
+
+      <ul>
+        <li>Clinical machine learning and artificial intelligence</li>
+        <li>Health data science and biomedical informatics</li>
+        <li>Liver disease and metabolic health</li>
+        <li>Electronic health record analytics</li>
+        <li>Predictive modeling and risk stratification</li>
+        <li>Translational data science</li>
+      </ul>
+
+    </div>
+
+    <!-- Selected Publications -->
+    <div class="section">
+
+      <h2>Selected Publications</h2>
+
+      <ul>
+        <li>
+          Wang T, et al. Example publication title.
+          <em>Nature Medicine</em>, 2025.
+        </li>
+
+        <li>
+          Wang T, et al. Example publication title.
+          <em>The Lancet Digital Health</em>, 2024.
+        </li>
+
+        <li>
+          Wang T, et al. Example publication title.
+          <em>JAMA Network Open</em>, 2023.
+        </li>
+      </ul>
+
+    </div>
+
+    <!-- Contact -->
+    <div class="section">
+
+      <h2>Contact</h2>
+
+      <p>
+        Email:
+        <a href="mailto:tina.wang@example.com">
+          tina.wang@example.com
+        </a>
+      </p>
+
+      <p>
+        Interested in collaboration or joining the lab?
+        Please get in touch.
+      </p>
+
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 HDSci Lab · University of Oxford
+  </footer>
+
+</body>
+</html>

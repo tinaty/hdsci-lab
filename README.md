@@ -1,1 +1,1 @@
-# hdsci-lab
+# HDSci Lab

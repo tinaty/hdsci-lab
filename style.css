@@ -108,6 +108,12 @@ nav a:hover {
   border: 3px solid #e5eaf3;
 }
 
+.person-card img.collaborator-logo {
+    width: 400px;
+    height: 180px;
+    object-fit: contain;
+}
+
 .person-card h3 {
   margin: 10px 0 5px;
   color: #111;

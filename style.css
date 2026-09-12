@@ -238,68 +238,63 @@ footer {
   }
 }
 
-/* =========================
-   PUBLICATIONS
-   ========================= */
+
+
+
 
 /* =========================
    Publications
    ========================= */
 
 .publications-header {
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 }
 
 .publications-header h1 {
-  margin-bottom: 8px;
-  color: #0b3d91;
-}
-
-.publications-header p {
   margin: 0;
-  color: #666;
+  color: #0b3d91;
 }
 
 
 /* Year section */
-
 .publication-year {
   display: grid;
-  grid-template-columns: 110px 1fr;
+  grid-template-columns: 90px 1fr;
   gap: 30px;
-  margin-bottom: 55px;
+  margin-bottom: 45px;
 }
 
 .year-heading {
   margin: 0;
+  padding-top: 18px;
   color: #0b3d91;
-  font-size: 1.7rem;
+  font-size: 1.45rem;
   font-weight: 700;
 }
 
 
 /* Publication list */
-
 .publication-list {
   border-top: 1px solid #dfe3e8;
 }
 
 .publication-item {
-  padding: 22px 0;
+  padding: 20px 0;
   border-bottom: 1px solid #dfe3e8;
 }
 
+
+/* Paper title */
 .publication-item h3 {
-  margin: 0 0 9px;
-  font-size: 1.08rem;
-  line-height: 1.5;
-  font-weight: 600;
+  margin: 0 0 8px;
   color: #222;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.5;
 }
 
 
 /* Journal + links */
-
 .publication-details {
   display: flex;
   align-items: center;
@@ -309,48 +304,73 @@ footer {
 
 .journal {
   color: #666;
-  font-size: 0.92rem;
+  font-size: 0.9rem;
   font-style: italic;
 }
 
+
+/* DOI / Code links */
 .publication-links {
   display: flex;
-  gap: 15px;
+  align-items: center;
+  gap: 8px;
   flex-shrink: 0;
 }
 
 .publication-links a {
+  display: inline-block;
+  padding: 4px 10px;
+  border: 1px solid #c8d3e3;
+  border-radius: 5px;
+
   color: #0b3d91;
-  text-decoration: none;
-  font-size: 0.88rem;
+  background: #fff;
+
+  font-size: 0.8rem;
   font-weight: 600;
+  text-decoration: none;
+
+  transition: all 0.2s ease;
 }
 
 .publication-links a:hover {
-  text-decoration: underline;
+  color: #fff;
+  background: #0b3d91;
+  border-color: #0b3d91;
 }
 
 
 /* Mobile */
-
 @media (max-width: 700px) {
 
   .publication-year {
     grid-template-columns: 1fr;
-    gap: 12px;
-    margin-bottom: 40px;
+    gap: 8px;
+    margin-bottom: 35px;
   }
 
   .year-heading {
-    font-size: 1.5rem;
+    padding-top: 0;
+    font-size: 1.35rem;
+  }
+
+  .publication-item {
+    padding: 18px 0;
+  }
+
+  .publication-item h3 {
+    font-size: 1rem;
   }
 
   .publication-details {
-    align-items: flex-start;
     flex-direction: column;
-    gap: 8px;
+    align-items: flex-start;
+    gap: 10px;
   }
 
+  .publication-links {
+    margin-top: 2px;
+  }
 }
 /* =========================
    PUBLICATIONS

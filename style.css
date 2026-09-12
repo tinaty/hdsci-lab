@@ -339,6 +339,17 @@ footer {
     font-size: 0.88rem;
     gap: 6px;
   }
+
+  .publications-header {
+  margin-bottom: 22px;
+}
+
+.publications-header h2 {
+  margin: 0;
+  color: #0b3d91;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
 }
 /* =========================
    PUBLICATIONS

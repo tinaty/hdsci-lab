@@ -247,7 +247,7 @@ footer {
    ========================= */
 
 .publications-header {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .publications-header h1 {
@@ -256,35 +256,20 @@ footer {
 }
 
 
-/* Year section */
-.publication-year {
-  display: grid;
-  grid-template-columns: 90px 1fr;
-  gap: 30px;
-  margin-bottom: 45px;
-}
-
-.year-heading {
-  margin: 0;
-  padding-top: 18px;
-  color: #0b3d91;
-  font-size: 1.45rem;
-  font-weight: 700;
-}
-
-
 /* Publication list */
+
 .publication-list {
   border-top: 1px solid #dfe3e8;
 }
 
 .publication-item {
-  padding: 20px 0;
+  padding: 22px 0;
   border-bottom: 1px solid #dfe3e8;
 }
 
 
 /* Paper title */
+
 .publication-item h3 {
   margin: 0 0 8px;
   color: #222;
@@ -294,64 +279,51 @@ footer {
 }
 
 
-/* Journal + links */
-.publication-details {
+/* Journal, year, DOI and Code */
+
+.publication-meta {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-}
+  flex-wrap: wrap;
+  gap: 7px;
 
-.journal {
   color: #666;
   font-size: 0.9rem;
+}
+
+.publication-meta .journal {
+  color: #666;
   font-style: italic;
 }
 
-
-/* DOI / Code links */
-.publication-links {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-shrink: 0;
+.publication-meta .year {
+  color: #666;
 }
 
-.publication-links a {
-  display: inline-block;
-  padding: 4px 10px;
-  border: 1px solid #c8d3e3;
-  border-radius: 5px;
+.publication-meta .separator {
+  color: #aaa;
+}
 
+
+/* DOI and Code links */
+
+.publication-meta a {
   color: #0b3d91;
-  background: #fff;
-
-  font-size: 0.8rem;
   font-weight: 600;
   text-decoration: none;
-
-  transition: all 0.2s ease;
 }
 
-.publication-links a:hover {
-  color: #fff;
-  background: #0b3d91;
-  border-color: #0b3d91;
+.publication-meta a:hover {
+  text-decoration: underline;
 }
 
 
 /* Mobile */
+
 @media (max-width: 700px) {
 
-  .publication-year {
-    grid-template-columns: 1fr;
-    gap: 8px;
-    margin-bottom: 35px;
-  }
-
-  .year-heading {
-    padding-top: 0;
-    font-size: 1.35rem;
+  .publications-header {
+    margin-bottom: 25px;
   }
 
   .publication-item {
@@ -360,16 +332,12 @@ footer {
 
   .publication-item h3 {
     font-size: 1rem;
+    line-height: 1.45;
   }
 
-  .publication-details {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  .publication-links {
-    margin-top: 2px;
+  .publication-meta {
+    font-size: 0.88rem;
+    gap: 6px;
   }
 }
 /* =========================

@@ -246,13 +246,16 @@ footer {
    Publications
    ========================= */
 
+
 .publications-header {
-  margin-bottom: 35px;
+  margin-bottom: 22px;
 }
 
-.publications-header h1 {
+.publications-header h2 {
   margin: 0;
   color: #0b3d91;
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
 
@@ -272,10 +275,34 @@ footer {
 
 .publication-item h3 {
   margin: 0 0 8px;
-  color: #222;
   font-size: 1.05rem;
   font-weight: 600;
   line-height: 1.5;
+}
+
+
+/* Clickable paper title */
+
+.publication-item h3 a {
+  color: #222;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.publication-item h3 a:visited {
+  color: #222;
+}
+
+.publication-item h3 a:hover {
+  color: #0b3d91;
+  text-decoration: none;
+}
+
+.publication-item h3 a:focus-visible {
+  color: #0b3d91;
+  outline: 2px solid #0b3d91;
+  outline-offset: 3px;
+  border-radius: 2px;
 }
 
 
@@ -313,6 +340,10 @@ footer {
   text-decoration: none;
 }
 
+.publication-meta a:visited {
+  color: #0b3d91;
+}
+
 .publication-meta a:hover {
   text-decoration: underline;
 }
@@ -323,7 +354,11 @@ footer {
 @media (max-width: 700px) {
 
   .publications-header {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+  }
+
+  .publications-header h2 {
+    font-size: 1.2rem;
   }
 
   .publication-item {
@@ -340,16 +375,6 @@ footer {
     gap: 6px;
   }
 
-  .publications-header {
-  margin-bottom: 22px;
-}
-
-.publications-header h2 {
-  margin: 0;
-  color: #0b3d91;
-  font-size: 1.3rem;
-  font-weight: 600;
-}
 }
 /* =========================
    PUBLICATIONS
